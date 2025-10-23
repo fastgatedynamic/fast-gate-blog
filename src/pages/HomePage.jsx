@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 
-const HomePage = ({ blogPostsData }) => {
+const HomePage = ({ posts }) => {
   // Filter articles for featured and recent
-  const featuredArticle = blogPostsData[0]; // Assuming the first article is the featured one
-  const recentArticles = blogPostsData.slice(1, 4); // Next 3 articles as recent
+  const featuredArticle = posts[0]; // Assuming the first article is the featured one
+  const recentArticles = posts.slice(1, 4); // Next 3 articles as recent
 
   return (
     <div className="homepage-container">
