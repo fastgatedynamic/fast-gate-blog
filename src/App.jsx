@@ -1763,7 +1763,7 @@ function App() {
         <header className="news-portal-header">
           <div className="header-content">
             <Link to="/">
-              <img src={logo} alt="Fast Gate Logo" className="blog-logo" />
+              <img src={logo} alt="Fast Gate Logo" className="blog-logo w-10 h-10" />
             </Link>
             <nav>
               <Link to="/" className="nav-link">Início</Link>
