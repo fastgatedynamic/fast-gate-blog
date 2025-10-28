@@ -1760,7 +1760,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header className="news-portal-header">
+        <header className="news-portal-header bg-white shadow-md">
           <div className="header-content container mx-auto flex justify-center py-4">
             <Link to="/">
               <img src={logo} alt="Fast Gate Logo" className="blog-logo h-12 w-auto" />
