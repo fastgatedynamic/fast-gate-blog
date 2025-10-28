@@ -1771,7 +1771,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage posts={posts} />} />
             
-            <Rou/>
+            <Route path="/artigo/:id" element={<ArtigoDetalhe posts={posts} />} />
           </Routes>
         </main>
 
