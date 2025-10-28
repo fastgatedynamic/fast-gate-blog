@@ -1760,24 +1760,19 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header className="news-portal-header">
-          <div className="header-content">
+        <header className="news-portal-header bg-white shadow-md">
+          <div className="header-content container mx-auto flex justify-center py-4">
             <Link to="/">
-              <img src={logo} alt="Fast Gate Logo" className="blog-logo w-10 h-10" />
+              <img src={logo} alt="Fast Gate Logo" className="blog-logo h-12 w-auto" />
             </Link>
-            <nav>
-              <Link to="/" className="nav-link">Início</Link>
-              <Link to="/artigos" className="nav-link">Artigos</Link>
-              {/* Adicione mais links de navegação conforme necessário */}
-            </nav>
           </div>
         </header>
 
         <main className="main-content">
           <Routes>
             <Route path="/" element={<HomePage posts={posts} />} />
-            <Route path="/artigos" element={<ArtigosPage posts={posts} />} />
-            <Route path="/artigos/:id" element={<ArtigoDetalhe posts={posts} />} />
+            
+            <Rou/>
           </Routes>
         </main>
 

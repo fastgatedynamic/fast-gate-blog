@@ -8,11 +8,11 @@ const ArtigoDetalhe = ({ blogPostsData }) => {
   const article = blogPostsData.find(post => post.id === id);
 
   if (!article) {
-    return <div className="article-detail-container">Artigo não encontrado.</div>;
+    return <div className="article-detail-container container mx-auto px-4 py-12 max-w-4xl">Artigo não encontrado.</div>;
   }
 
   return (
-    <div className="article-detail-container">
+    <div className="article-detail-container container mx-auto px-4 py-12 max-w-4xl">
       <div className="article-header">
         <img src={article.image} alt={article.title} className="article-detail-image" />
         <div className="article-header-content">
@@ -27,7 +27,7 @@ const ArtigoDetalhe = ({ blogPostsData }) => {
         <ReactMarkdown>{article.content}</ReactMarkdown>
       </div>
       <div className="back-to-articles">
-        <Link to="/artigos" className="btn-secondary">Voltar para Todos os Artigos</Link>
+        <Link to="/" className="btn-secondary">Voltar para a Página Principal</Link>
       </div>
     </div>
   );
