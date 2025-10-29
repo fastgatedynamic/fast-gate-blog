@@ -18,7 +18,7 @@ const HomePage = ({ posts }) => {
                 </div>
                 <CardHeader className="flex-grow">
                   <Badge className="news-category-badge w-fit mb-2">{article.category}</Badge>
-                  <CardTitle className="news-headline"><Link to={`/post/${article.id}`}>{article.title}</Link></CardTitle>
+                  <CardTitle className="news-headline"><Link to={`/artigo/${article.id}`}>{article.title}</Link></CardTitle>
                   <CardDescription className="text-gray-600 text-sm mt-2">{article.excerpt}</CardDescription>
                 </CardHeader>
                 <CardFooter className="news-meta flex justify-between items-center">
